@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
-import {Home} from './components/home/Home'
-import {Login} from './components/Login/Login'
+import {Home} from './components/home/Home';
+import {Login} from './components/Login/Login';
+import './App.css';
 
 import { AuthUser,AuthAdmin } from "./components/auth";
 
