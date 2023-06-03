@@ -1,8 +1,7 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavLink from 'react-bootstrap';
 import { useState, useEffect } from "react";
 import logo from '../assets/img/logoc.png';
 import icon1 from '../assets/img/icon-whatsapp.png';
@@ -42,8 +41,8 @@ const NavCollaps = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/" className={activeLink === 'home' ? 'active-navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link href="/contacto" className={activeLink === 'contacto' ? 'active-navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contacto')}>Contacto</Nav.Link>
+            <Nav.Link href="/" className={activeLink === '/' ? 'active-navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Inicio</Nav.Link>
+            <Nav.Link href="/Servicios" className={activeLink === 'Servicios' ? 'active-navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('Servicios')}>Servicios</Nav.Link>
             <Nav.Link href="/login" className={activeLink === 'login' ? 'active-navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('login')}>Login</Nav.Link>
           </Nav>
           <span className="navbar-text">
@@ -55,21 +54,6 @@ const NavCollaps = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-
-    /*<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container>
-        <Navbar.Brand href="/">Home</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="/">Contacto</Nav.Link>
-          </Nav>
-          <Nav>
-            <Nav.Link href="/login">Login</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>*/
   )
 }
 
