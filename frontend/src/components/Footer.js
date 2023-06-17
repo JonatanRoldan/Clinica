@@ -13,7 +13,7 @@ export const Footer = () => {
                     </Col>
                     <Col sm={6} className="text-center text-sm-end">
                         <div className="social-icon">
-                            <a href=""><img src={icon1} alt="whatsapp" /></a>
+                            <a href="https://api.whatsapp.com/send/?phone=50236289472&text=Hola%20Bienvenido!"><img src={icon1} alt="whatsapp" /></a>
                         </div>
                         <p>CopyRight 2023. All Right Reserved</p>
                     </Col>

@@ -5,8 +5,8 @@ import item1 from "../assets/img/item1.jpg";
 import item2 from "../assets/img/item2.jpg";
 import item3 from "../assets/img/item3.jpg";
 import item4 from "../assets/img/item4.jpg";
-import colorSharp from "../assets/img/colorSharp.jpg";
 import './Servicios.css';
+import { forwardRef } from "react";
 
 export const Servicios = () => {
     const responsive ={
